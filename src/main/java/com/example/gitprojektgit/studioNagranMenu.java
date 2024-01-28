@@ -36,7 +36,6 @@ public class studioNagranMenu {
         }
     }
 
-
     public void ustawTrybJasny() throws IOException {
         zmienTryb.trybJasny(scenePane);
     }

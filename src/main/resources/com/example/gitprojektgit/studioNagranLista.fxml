@@ -11,18 +11,17 @@
                 <items>
                     <MenuItem mnemonicParsing="false" text="Zapisz" />
                     <MenuItem mnemonicParsing="false" text="Regulamin" />
-                    <MenuItem mnemonicParsing="false" text="Wyjdź" />
+                    <MenuItem mnemonicParsing="false" onAction="#zamknijAplikacje" text="Wyjdź" />
                 </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Ustawienia">
                 <items>
                <Menu mnemonicParsing="false" text="Zmień język programu">
                  <items>
-                   <MenuItem mnemonicParsing="false" text="Action 1" />
+                     <MenuItem mnemonicParsing="false" text="Polski" />
+                     <MenuItem mnemonicParsing="false" text="English" />
                  </items>
                </Menu>
-               <MenuItem mnemonicParsing="false" text="Polski" />
-               <MenuItem mnemonicParsing="false" text="English" />
                     <Menu mnemonicParsing="false" text="Zmień tryb ekranu">
                         <items>
                             <MenuItem mnemonicParsing="false" onAction="#ustawTrybJasny" text="Tryb jasny" />
@@ -47,13 +46,13 @@
         </font>
     </Button>
 
-    <Label layoutX="217.0" layoutY="56.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Studio">
+    <Label layoutX="209.0" layoutY="51.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Studio">
         <font>
             <Font size="20.0" />
         </font>
     </Label>
 
-    <Label fx:id="nazwaStudia" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="52.0" prefHeight="38.0" prefWidth="172.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="SUMU" textAlignment="CENTER">
+    <Label fx:id="nazwaStudia" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="47.0" prefHeight="38.0" prefWidth="172.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="SUMU" textAlignment="CENTER">
         <font>
             <Font name="Cambria" size="30.0" />
         </font>

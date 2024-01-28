@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.gitprojektgit.Ustawienia"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" styleClass="body" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gitprojektgit.Ustawienia">
+   <children>
+      <Label layoutX="227.0" layoutY="14.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Ustawienia">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="329.0" mnemonicParsing="false" onAction="#wrocDoMenu" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Wróć do menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutY="75.0" prefHeight="7.0" prefWidth="606.0" />
+      <Button layoutX="374.0" layoutY="244.0" mnemonicParsing="false" onAction="#zmienNazweStudia" prefHeight="31.0" prefWidth="153.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="nazwa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="374.0" layoutY="128.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" styleClass="menubtn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="język">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Polski" />
+          <MenuItem mnemonicParsing="false" text="English" />
+        </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MenuButton>
+      <MenuButton layoutX="374.0" layoutY="184.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="153.0" styleClass="menubtn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="tryb">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ustawTrybJasny" text="Tryb Jasny" />
+          <MenuItem mnemonicParsing="false" onAction="#ustawTrybCiemny" text="Tryb Ciemny" />
+        </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="76.0" layoutY="129.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Zmień język programu">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="185.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Zmien tryb ekranu">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="244.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Zmień nazwę studia">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
 </AnchorPane>

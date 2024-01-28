@@ -47,22 +47,23 @@
             </font>
         </Label>
 
-        <Button fx:id="lista" layoutX="185.0" layoutY="151.0" mnemonicParsing="false" onAction="#listaUtworow" prefHeight="43.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Lista utworów">
+        <Button fx:id="lista" layoutX="185.0" layoutY="169.0" mnemonicParsing="false" onAction="#listaUtworow" prefHeight="43.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Lista utworów">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
 
-        <Button fx:id="ustawienia" layoutX="184.0" layoutY="219.0" mnemonicParsing="false" onAction="#ustawienia" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Ustawienia">
+        <Button fx:id="ustawienia" layoutX="185.0" layoutY="236.0" mnemonicParsing="false" onAction="#ustawienia" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Ustawienia">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
 
-        <Button fx:id="wyjscie" layoutX="184.0" layoutY="288.0" mnemonicParsing="false" onAction="#zamknijAplikacje" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Wyjdź">
+        <Button fx:id="wyjscie" layoutX="184.0" layoutY="307.0" mnemonicParsing="false" onAction="#zamknijAplikacje" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Wyjdź">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
+      <Separator layoutX="-3.0" layoutY="127.0" prefHeight="0.0" prefWidth="606.0" />
     </children>
 </AnchorPane>

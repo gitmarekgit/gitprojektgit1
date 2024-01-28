@@ -6,11 +6,24 @@
 -fx-text-fill: #EEEEEE
 }
 
+.menubtn{
+-fx-background-color: #2F2D38;
+}
+
+.menubtn .label{
+-fx-text-fill: #EEEEEE
+}
+
+.menubtn .menu-item .label{
+-fx-text-fill: black
+}
+
 .btn{
     -fx-background-color: #2F2D38;
     -fx-text-fill: #EEEEEE;
 }
 
-.btn:hover{
+.btn:hover,
+.menubtn:hover{
 -fx-background-color: #484555;
 }
