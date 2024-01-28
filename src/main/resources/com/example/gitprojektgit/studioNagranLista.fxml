@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gitprojektgit.studioNagran">
+    <MenuBar prefHeight="26.0" prefWidth="600.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Plik">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Zapisz" />
+                    <MenuItem mnemonicParsing="false" text="Regulamin" />
+                    <MenuItem mnemonicParsing="false" text="Wyjdź" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ustawienia">
+                <items>
+                    <Menu mnemonicParsing="false" text="Zmień tryb ekranu">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="Tryb jasny" />
+                            <MenuItem mnemonicParsing="false" text="Tryb ciemny" />
+                        </items>
+                    </Menu>
+                    <MenuItem mnemonicParsing="false" text="Zmień nazwę studia" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <Button fx:id="plus" layoutX="507.0" layoutY="316.0" mnemonicParsing="false" onAction="#dodaj" style="-fx-background-radius: 50;" text="+" textAlignment="CENTER">
+        <font>
+            <Font size="26.0" />
+        </font>
+    </Button>
+
+    <Button fx:id="usunUtworPrzycisk" layoutX="447.0" layoutY="316.0" mnemonicParsing="false" onAction="#usunUtwor" prefHeight="56.0" prefWidth="54.0" style="-fx-background-radius: 50;" text="-" textAlignment="CENTER">
+        <font>
+            <Font size="26.0" />
+        </font>
+    </Button>
+
+    <Label layoutX="217.0" layoutY="56.0" text="Studio">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="nazwaStudia" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="52.0" prefHeight="38.0" prefWidth="172.0" text="SUMU" textAlignment="CENTER">
+        <font>
+            <Font name="Cambria" size="30.0" />
+        </font>
+    </Label>
+
+    <TableView fx:id="tabelaMuzyki" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="autorColumn" prefWidth="100" text="Autor" />
+            <TableColumn fx:id="tytulColumn" prefWidth="100" text="Tytuł" />
+            <TableColumn fx:id="albumColumn" prefWidth="100" text="Album" />
+            <TableColumn fx:id="dodanoPrzezColumn" prefWidth="100" text="Dodano przez" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="wrocDoMenuPrzycisk" layoutX="32.0" layoutY="347.0" mnemonicParsing="false" onAction="#wrocDoMenu" text="Wróć do menu" />
+
+</AnchorPane>
