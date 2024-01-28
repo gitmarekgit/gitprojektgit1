@@ -146,14 +146,14 @@ public class zmianaScen {
     }
 
     public void ustawTrybJasny() throws IOException{
-        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitaplikacjagit/gitprojektgit/src/styles/light_mode.css");
-        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitaplikacjagit/gitprojektgit/src/styles/dark_mode.css");
+        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css");
+        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/dark_mode.css");
         System.out.println("lightmode");
     }
 
     public void ustawTrybCiemny() throws IOException{
-        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitaplikacjagit/gitprojektgit/src/styles/dark_mode.css");
-        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitaplikacjagit/gitprojektgit/src/styles/light_mode.css");
+        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/dark_mode.css");
+        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css");
         System.out.println("darkmode");
     }
 }
