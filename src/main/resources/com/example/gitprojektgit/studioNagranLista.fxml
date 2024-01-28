@@ -16,6 +16,13 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Ustawienia">
                 <items>
+               <Menu mnemonicParsing="false" text="Zmień język programu">
+                 <items>
+                   <MenuItem mnemonicParsing="false" text="Action 1" />
+                 </items>
+               </Menu>
+               <MenuItem mnemonicParsing="false" text="Polski" />
+               <MenuItem mnemonicParsing="false" text="English" />
                     <Menu mnemonicParsing="false" text="Zmień tryb ekranu">
                         <items>
                             <MenuItem mnemonicParsing="false" onAction="#ustawTrybJasny" text="Tryb jasny" />
@@ -52,12 +59,12 @@
         </font>
     </Label>
 
-    <TableView fx:id="tabelaMuzyki" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0" styleClass="tabela" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css">
+    <TableView fx:id="tabelaMuzyki" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="506.0">
         <columns>
-            <TableColumn fx:id="autorColumn" prefWidth="100" text="Autor" />
-            <TableColumn fx:id="tytulColumn" prefWidth="100" text="Tytuł" />
-            <TableColumn fx:id="albumColumn" prefWidth="100" text="Album" />
-            <TableColumn fx:id="dodanoPrzezColumn" prefWidth="100" text="Dodano przez" />
+            <TableColumn fx:id="autorColumn" prefWidth="100" styleClass="tabela" text="Autor" />
+            <TableColumn fx:id="tytulColumn" prefWidth="136.00001525878906" styleClass="tabela" text="Tytuł" />
+            <TableColumn fx:id="albumColumn" prefWidth="134.199951171875" styleClass="tabela" text="Album" />
+            <TableColumn fx:id="dodanoPrzezColumn" prefWidth="135.4000244140625" styleClass="tabela" text="Dodano przez" />
         </columns>
     </TableView>
 

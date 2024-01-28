@@ -54,12 +54,12 @@ public class oknoDodaj {
         TextField nazwaTytul = new TextField();
         nazwaTytul.setMaxWidth(300);
 
-        Label plyta = new Label("Nazwa płyty: ");
+        Label plyta = new Label("Nazwa albumu: ");
         TextField nazwaPlyty = new TextField();
         nazwaPlyty.setMaxWidth(300);
 
         VBox przycisk = new VBox(10);
-        Button dodaj = new Button("Dodaj utwór");
+        Button dodaj = new Button("Dodaj");
         dodaj.setOnAction(e -> {
             stage.close();
             String userID = String.valueOf(pobierzIDUzytkownika(nazwaUzytkownika));
