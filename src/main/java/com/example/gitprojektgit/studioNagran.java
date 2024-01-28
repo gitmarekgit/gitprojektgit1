@@ -10,11 +10,15 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 import java.util.Optional;
+
+import static com.example.gitprojektgit.zmianaTrybu.getTryb;
+
 
 public class studioNagran {
 
@@ -23,13 +27,39 @@ public class studioNagran {
 
     @FXML
     private TableView<Muzyka> tabelaMuzyki;
-
+    @FXML
+    private AnchorPane scenePane;
     private Lista lista;
+    private final zmianaTrybu zmienTryb = new zmianaTrybu();
 
+    double tryb = getTryb();
     @FXML
     public void initialize() {
         lista = new Lista();
         lista.inicjalizujTabele(tabelaMuzyki);
+
+    if(tryb == 0){
+        try {
+            ustawTrybJasny();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    else{
+        try {
+            ustawTrybCiemny();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+    }
+}
+        System.out.println(tryb);
+    }
+    public void ustawTrybJasny() throws IOException {
+        zmienTryb.trybJasny(scenePane);
+    }
+
+    public void ustawTrybCiemny() throws IOException{
+        zmienTryb.trybCiemny(scenePane);
     }
 
     @FXML

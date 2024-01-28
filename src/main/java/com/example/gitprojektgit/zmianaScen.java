@@ -17,7 +17,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
+import static com.example.gitprojektgit.zmianaTrybu.getTryb;
+
 public class zmianaScen {
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -30,9 +33,10 @@ public class zmianaScen {
     private TextField potwierdzHaslo;
     @FXML
     private Label zleDane;
-
     @FXML
     private AnchorPane scenePane;
+    private static zmianaTrybu zmienTryb = new zmianaTrybu();
+    double tryb = getTryb();
 
     public void zmienScene(ActionEvent event, String scena) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(scena)));
@@ -40,6 +44,14 @@ public class zmianaScen {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void ustawTrybJasny() throws IOException {
+        zmienTryb.trybJasny(scenePane);
+    }
+
+    public void ustawTrybCiemny() throws IOException{
+        zmienTryb.trybCiemny(scenePane);
     }
 
     // Metoda do sprawdzenia czy użytkownik istnieje w bazie danych
@@ -116,6 +128,7 @@ public class zmianaScen {
 
     public void listaUtworow(ActionEvent event) throws IOException {
         zmienScene(event, "studioNagranLista.fxml");
+
     }
 
     public void ustawienia(ActionEvent event) throws IOException {
@@ -145,15 +158,4 @@ public class zmianaScen {
         nazwaStudia.setText(nowaNazwaStudia);
     }
 
-    public void ustawTrybJasny() throws IOException{
-        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css");
-        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/dark_mode.css");
-        System.out.println("lightmode");
-    }
-
-    public void ustawTrybCiemny() throws IOException{
-        scenePane.getStylesheets().add("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/dark_mode.css");
-        scenePane.getStylesheets().remove("file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css");
-        System.out.println("darkmode");
-    }
 }

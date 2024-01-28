@@ -1,7 +1,16 @@
 .body{
--fx-background-color: #070125;
+-fx-background-color: #201C31;
 }
 
 .text{
 -fx-text-fill: #EEEEEE
+}
+
+.btn{
+    -fx-background-color: #2F2D38;
+    -fx-text-fill: #EEEEEE;
+}
+
+.btn:hover{
+-fx-background-color: #484555;
 }

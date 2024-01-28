@@ -41,19 +41,19 @@
             </font>
         </Label>
 
-        <Button fx:id="lista" layoutX="185.0" layoutY="151.0" mnemonicParsing="false" onAction="#listaUtworow" prefHeight="43.0" prefWidth="232.0" text="Lista utworów">
+        <Button fx:id="lista" layoutX="185.0" layoutY="151.0" mnemonicParsing="false" onAction="#listaUtworow" prefHeight="43.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Lista utworów">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
 
-        <Button fx:id="ustawienia" layoutX="184.0" layoutY="219.0" mnemonicParsing="false" onAction="#ustawienia" prefHeight="38.0" prefWidth="232.0" text="Ustawienia">
+        <Button fx:id="ustawienia" layoutX="184.0" layoutY="219.0" mnemonicParsing="false" onAction="#ustawienia" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Ustawienia">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
 
-        <Button fx:id="wyjscie" layoutX="184.0" layoutY="288.0" mnemonicParsing="false" onAction="#zamknijAplikacje" prefHeight="38.0" prefWidth="232.0" text="Wyjdź">
+        <Button fx:id="wyjscie" layoutX="184.0" layoutY="288.0" mnemonicParsing="false" onAction="#zamknijAplikacje" prefHeight="38.0" prefWidth="232.0" styleClass="btn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Wyjdź">
             <font>
                 <Font size="20.0" />
             </font>
