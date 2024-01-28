@@ -40,19 +40,19 @@
         </font>
     </Button>
 
-    <Label layoutX="217.0" layoutY="56.0" styleClass="text" stylesheets="@../../../../../styles/light_mode.css" text="Studio">
+    <Label layoutX="217.0" layoutY="56.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="Studio">
         <font>
             <Font size="20.0" />
         </font>
     </Label>
 
-    <Label fx:id="nazwaStudia" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="52.0" prefHeight="38.0" prefWidth="172.0" styleClass="text" stylesheets="@../../../../../styles/light_mode.css" text="SUMU" textAlignment="CENTER">
+    <Label fx:id="nazwaStudia" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="52.0" prefHeight="38.0" prefWidth="172.0" styleClass="text" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="SUMU" textAlignment="CENTER">
         <font>
             <Font name="Cambria" size="30.0" />
         </font>
     </Label>
 
-    <TableView fx:id="tabelaMuzyki" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0">
+    <TableView fx:id="tabelaMuzyki" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0" styleClass="tabela" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css">
         <columns>
             <TableColumn fx:id="autorColumn" prefWidth="100" text="Autor" />
             <TableColumn fx:id="tytulColumn" prefWidth="100" text="Tytuł" />

@@ -6,8 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -17,10 +17,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Objects;
 
-import static com.example.gitprojektgit.zmianaTrybu.getTryb;
 
-public class zmianaScen {
-
+public class Logowanie {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -33,10 +31,6 @@ public class zmianaScen {
     private TextField potwierdzHaslo;
     @FXML
     private Label zleDane;
-    @FXML
-    private AnchorPane scenePane;
-    private static zmianaTrybu zmienTryb = new zmianaTrybu();
-    double tryb = getTryb();
 
     public void zmienScene(ActionEvent event, String scena) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(scena)));
@@ -44,14 +38,6 @@ public class zmianaScen {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
-
-    public void ustawTrybJasny() throws IOException {
-        zmienTryb.trybJasny(scenePane);
-    }
-
-    public void ustawTrybCiemny() throws IOException{
-        zmienTryb.trybCiemny(scenePane);
     }
 
     // Metoda do sprawdzenia czy użytkownik istnieje w bazie danych
@@ -124,38 +110,6 @@ public class zmianaScen {
 
     public void logowanie(ActionEvent event) throws IOException {
         zmienScene(event, "login.fxml");
-    }
-
-    public void listaUtworow(ActionEvent event) throws IOException {
-        zmienScene(event, "studioNagranLista.fxml");
-
-    }
-
-    public void ustawienia(ActionEvent event) throws IOException {
-        zmienScene(event, "ustawienia.fxml");
-    }
-
-    public void zamknijAplikacje(ActionEvent event){
-        //wyskakuje okienko ktore pyta czy napewno chcesz wyjsc
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("EXIT");
-        alert.setHeaderText("Aplikacja zostanie wyłączona");
-        alert.setContentText("Czy napewno chcesz wyjść?");
-
-        if(alert.showAndWait().get()== ButtonType.OK){
-            //jak kliknie sie ok to sie wylacza a jak cancel to wraca do poprzedniej sceny
-            stage = (Stage) scenePane.getScene().getWindow();
-            stage.close();
-        }
-    }
-
-    @FXML
-    private Label nazwaStudia;
-
-    public void zmienNazweStudia() throws IOException{
-        //zmiana nazwy studia
-        String nowaNazwaStudia = zmianaNazwyStudia.pokazOkno();
-        nazwaStudia.setText(nowaNazwaStudia);
     }
 
 }
