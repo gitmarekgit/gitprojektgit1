@@ -24,8 +24,8 @@
       </Button>
       <MenuButton layoutX="374.0" layoutY="128.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="154.0" styleClass="menubtn" stylesheets="file:/C:/Users/marek/Desktop/gitprojektgit/gitprojektgit1/src/styles/light_mode.css" text="język">
         <items>
-          <MenuItem mnemonicParsing="false" text="Polski" />
-          <MenuItem mnemonicParsing="false" text="English" />
+          <MenuItem mnemonicParsing="false" onAction="#ustawJezykPolski" text="Polski" />
+          <MenuItem mnemonicParsing="false" onAction="#ustawJezykAngielski" text="English" />
         </items>
          <font>
             <Font size="15.0" />

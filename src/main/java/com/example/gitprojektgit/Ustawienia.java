@@ -30,6 +30,14 @@ public class Ustawienia{
         }
     }
 
+    public void ustawJezykPolski(){
+        System.out.println("polski");
+    }
+
+    public void ustawJezykAngielski(){
+        System.out.println("angielski");
+    }
+
     public void ustawTrybJasny() throws IOException {
         zmienTryb.trybJasny(scenePane);
         System.out.println(tryb);
